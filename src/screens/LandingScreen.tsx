@@ -1,24 +1,21 @@
-import { useNavigation } from '../utils/useNavigation';
-import { connect } from 'react-redux';
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, Dimensions, Image } from 'react-native';
-import { onUpdateLocation, UserState, ApplicationState } from '../redux';
+import { View, Text, StyleSheet, Dimensions } from 'react-native';
 
 const screenWidth = Dimensions.get('screen').width;
 
-interface LandingProps {
-  userReducer: UserState,
-  onUpdateLocation: Function
-};
-
-const _LandingScreen: React.FC<LandingProps> = (props) => {
-  const [displayAddress, setDisplayAddress] = useState("Waiting for Current Location")
+const LandingScreen: React.FC<{}> = (props) => {
+  const [displayAddress, setDisplayAddress] = useState(
+    'Waiting for Current Location'
+  );
 
   return (
     <View style={styles.container}>
       <View style={styles.navigation} />
       <View style={styles.body}>
-        <Image source={require('../images/delivery_icon.png')} style={styles.deliveryIcon} />
+        {/* <Image
+          source='#'
+          style={styles.deliveryIcon}
+        /> */}
         <View style={styles.addressContainer}>
           <Text style={styles.addressTitle}>Your Delivery Address</Text>
         </View>
@@ -68,13 +65,5 @@ const styles = StyleSheet.create({
     flex: 1,
   }
 });
-
-const mapToStateProps = (state: ApplicationState) => ({
-  userReducer: state.userReducer
-});
-
-const LandingScreen = connect(
-  mapToStateProps, { onUpdateLocation }
-)(_LandingScreen);
 
 export { LandingScreen };
