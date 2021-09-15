@@ -1,6 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { LandingScreen } from './src/screens/LandingScreen';
+
+const switchNavigator = createSwitchNavigator({
+  landingStack: {
+    screen: createStackNavigator({
+      Landing: LandingScreen,
+      // search address screen
+    }, {
+      defaultNavigationOptions: {
+        headerShown: false
+      }
+    }),
+  },
+});
 
 export default function App() {
   return (
@@ -9,7 +23,7 @@ export default function App() {
       <StatusBar style="auto" />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {

@@ -1,23 +1,8 @@
 import { useNavigation } from '../utils/useNavigation';
-import * as Location from 'expo-location';
 import { connect } from 'react-redux';
-import React, {
-  useState,
-  useReducer,
-  useEffect
-} from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-  Dimensions,
-  Image
-} from 'react-native';
-import {
-  onUpdateLocation,
-  UserState,
-  ApplicationState
-} from '../redux';
+import React, { useState } from 'react';
+import { View, Text, StyleSheet, Dimensions, Image } from 'react-native';
+import { onUpdateLocation, UserState, ApplicationState } from '../redux';
 
 const screenWidth = Dimensions.get('screen').width;
 
@@ -27,49 +12,11 @@ interface LandingProps {
 };
 
 const _LandingScreen: React.FC<LandingProps> = (props) => {
-  const { userReducer, onUpdateLocation } = props;
-  const { navigate } = useNavigation()
-  const [errorMsg, setErrorMsg] = useState("")
-  const [address, setAddress] = useState<Location.Address>()
   const [displayAddress, setDisplayAddress] = useState("Waiting for Current Location")
-
-  useEffect(() => {
-    (async () => {
-      let { status } = await Location.requestPermissionsAsync();
-      if (status !== 'granted') {
-        setErrorMsg('Permission to access location is not granted')
-      }
-
-      let location: any = await Location.getCurrentPositionAsync({});
-      const { coords } = location
-
-      if (coords) {
-        const { latitude, longitude } = coords;
-        let addressResponse: any = await Location.reverseGeocodeAsync({ latitude, longitude })
-
-        for (let item of addressResponse) {
-          setAddress(item)
-          onUpdateLocation(item)
-          let currentAddress = `${item.name},${item.street}, ${item.postalCode}, ${item.country}`
-          setDisplayAddress(currentAddress)
-
-          if (currentAddress.length > 0) {
-            setTimeout(() => {
-              navigate('homeStack')
-            }, 2000)
-          }
-          return;
-        }
-      } else {
-        //notify user something went wrong with location
-      }
-    })();
-  }, [])
 
   return (
     <View style={styles.container}>
       <View style={styles.navigation} />
-
       <View style={styles.body}>
         <Image source={require('../images/delivery_icon.png')} style={styles.deliveryIcon} />
         <View style={styles.addressContainer}>
