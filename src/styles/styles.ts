@@ -4,7 +4,7 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column',
-    backgroundColor: 'ghostwhite',
+    backgroundColor: 'black',
     alignItems: 'center',
     ...Platform.select({
       ios: { paddingTop: 20 },
@@ -17,10 +17,10 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'stretch',
     alignItems: 'center',
-    backgroundColor: 'lightgray',
-    borderWidth: 1,
+    backgroundColor: 'transparent',
+    borderWidth: 3,
     borderStyle: 'dashed',
-    borderColor: 'darkslategray'
+    borderColor: 'white'
   },
 
   boxb: {
@@ -28,10 +28,10 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'stretch',
     alignItems: 'center',
-    backgroundColor: 'lightgray',
-    borderWidth: 1,
+    backgroundColor: 'transparent',
+    borderWidth: 3,
     borderStyle: 'dashed',
-    borderColor: 'darkslategray'
+    borderColor: 'white'
   },
 
   boxc: {
@@ -39,21 +39,32 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'stretch',
     alignItems: 'center',
-    backgroundColor: 'lightgray',
-    borderWidth: 1,
+    backgroundColor: 'transparent',
+    borderWidth: 3,
     borderStyle: 'dashed',
-    borderColor: 'darkslategray'
+    borderColor: 'white'
   },
 
-  boxd: {
-    height: 441,
+  boxd1: {
+    height: 284,
     justifyContent: 'center',
     alignSelf: 'stretch',
     alignItems: 'center',
-    backgroundColor: 'lightgray',
-    borderWidth: 1,
+    backgroundColor: 'transparent',
+    borderWidth: 3,
     borderStyle: 'dashed',
-    borderColor: 'darkslategray'
+    borderColor: 'white'
+  },
+
+  boxd2: {
+    height: 156,
+    justifyContent: 'center',
+    alignSelf: 'stretch',
+    alignItems: 'center',
+    backgroundColor: 'transparent',
+    borderWidth: 3,
+    borderStyle: 'dashed',
+    borderColor: 'white'
   },
 
   boxe: {
@@ -61,10 +72,10 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'stretch',
     alignItems: 'center',
-    backgroundColor: 'lightgray',
-    borderWidth: 1,
+    backgroundColor: 'transparent',
+    borderWidth: 3,
     borderStyle: 'dashed',
-    borderColor: 'darkslategray'
+    borderColor: 'white'
   },
 
   boxf: {
@@ -72,10 +83,10 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'stretch',
     alignItems: 'center',
-    backgroundColor: 'lightgray',
-    borderWidth: 1,
+    backgroundColor: 'transparent',
+    borderWidth: 3,
     borderStyle: 'dashed',
-    borderColor: 'darkslategray'
+    borderColor: 'white'
   },
 
   boxg: {
@@ -83,10 +94,10 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'stretch',
     alignItems: 'center',
-    backgroundColor: 'lightgray',
-    borderWidth: 1,
+    backgroundColor: 'transparent',
+    borderWidth: 3,
     borderStyle: 'dashed',
-    borderColor: 'darkslategray'
+    borderColor: 'white'
   },
 
   boxh: {
@@ -94,14 +105,15 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'stretch',
     alignItems: 'center',
-    backgroundColor: 'lightgray',
-    borderWidth: 1,
+    backgroundColor: 'transparent',
+    borderWidth: 3,
     borderStyle: 'dashed',
-    borderColor: 'darkslategray'
+    borderColor: 'white'
   },
 
   boxText: {
-    color: 'darkslategray',
+    fontSize: 42,
+    color: 'white',
     fontWeight: 'bold'
   }
 });
