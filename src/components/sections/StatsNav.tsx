@@ -3,7 +3,7 @@ import { View } from "react-native";
 import styles from "../../styles/styles";
 
 interface Props {
-  // any other props that come into the component, you don't have to explicitly define children.
+  // Add more prop types here
 };
 
 const StatsNav: React.FC<Props> = ({ children, ...props }) => {

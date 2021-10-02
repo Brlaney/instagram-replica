@@ -18,7 +18,7 @@ export default StyleSheet.create({
     alignSelf: 'stretch',
     alignItems: 'center',
     backgroundColor: 'transparent',
-    borderWidth: 3,
+    borderWidth: 2,
     borderStyle: 'dashed',
     borderColor: 'white'
   },
@@ -30,7 +30,7 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'stretch',
     backgroundColor: 'transparent',
-    borderWidth: 3,
+    borderWidth: 2,
     borderStyle: 'dashed',
     borderColor: 'white'
   },
@@ -42,7 +42,7 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'stretch',
     backgroundColor: 'transparent',
-    borderWidth: 3,
+    borderWidth: 2,
     borderStyle: 'dashed',
     borderColor: 'white'
   },
@@ -54,7 +54,7 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'stretch',
     backgroundColor: 'transparent',
-    borderWidth: 3,
+    borderWidth: 2,
     borderStyle: 'dashed',
     borderColor: 'white'
   },
@@ -66,7 +66,7 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'stretch',
     backgroundColor: 'transparent',
-    borderWidth: 3,
+    borderWidth: 2,
     borderStyle: 'dashed',
     borderColor: 'white'
   },
@@ -78,21 +78,16 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'stretch',
     backgroundColor: 'transparent',
-    borderWidth: 3,
-    borderStyle: 'dashed',
-    borderColor: 'white'
   },
 
   boxf: {
     height: 125,
     display: 'flex',
+    flexDirection: 'row',
     alignItems: 'flex-start',
     justifyContent: 'center',
     alignSelf: 'stretch',
     backgroundColor: 'transparent',
-    borderWidth: 3,
-    borderStyle: 'dashed',
-    borderColor: 'white'
   },
 
   boxg: {
@@ -103,8 +98,6 @@ export default StyleSheet.create({
     alignSelf: 'stretch',
     backgroundColor: 'transparent',
     borderWidth: 3,
-    borderStyle: 'dashed',
-    borderColor: 'white'
   },
 
   boxh: {
@@ -115,14 +108,10 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'stretch',
     backgroundColor: 'transparent',
-    borderWidth: 3,
-    borderStyle: 'dashed',
-    borderColor: 'white'
   },
 
   boxText: {
     fontSize: 42,
-    color: 'white',
-    fontWeight: 'bold'
+    color: 'white'
   }
 });

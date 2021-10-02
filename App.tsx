@@ -23,7 +23,7 @@ export default function App() {
         <Text style={styles.boxText}>Blocked zone</Text>
       </TopPhoneNav>
 
-      {/* Box-b | Back arrow - username - bell - menu dots */}
+      {/* TopNav component | Box-b */}
       <TopNav />
 
       {/* Box-c | profile image badge - posts - followers - following */}
@@ -42,21 +42,17 @@ export default function App() {
       </Actions>
 
       {/* Box-e | reels */}
-      <Reels>
-        <Text style={styles.boxText}>Reels</Text>
-      </Reels>
+      <Reels />
 
-      {/* Box-f | posts grid - reels icon - tagged images badge */}
-      <PostsNav>
-        <Text style={styles.boxText}>Posts nav</Text>
-      </PostsNav>
+      {/* PostsNav component | Box-f */}
+      <PostsNav />
 
       {/* Box-g | posts */}
       <Posts>
         <Text style={styles.boxText}>Posts</Text>
       </Posts>
 
-      {/* Box-h | bottom nav home - search - tv - shopping - profile badge */}
+      {/* BottomNav component | Box-h */}
       <BottomNav />
 
     </View>

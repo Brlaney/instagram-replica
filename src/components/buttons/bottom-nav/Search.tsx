@@ -22,12 +22,12 @@ const Search: React.FC<Props> = ({ ...props }) => {
         cx='116.405'
         cy='69.4048'
         r='26.4048'
-        stroke='#FAFAFA'
+        stroke='white'
         strokeWidth='6'
       />
       <Path
         d='M152 105L135.492 88.4921'
-        stroke='#FAFAFA'
+        stroke='white'
         strokeWidth='5'
         strokeLinecap='round'
       />

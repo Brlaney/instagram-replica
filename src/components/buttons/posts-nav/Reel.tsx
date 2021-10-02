@@ -5,11 +5,7 @@ interface Props {
   // Add more prop types here
 };
 
-/* 
-  stroke={props.iconState.active ? 'white' : '#C4C4C4'} 
-*/
-
-const Watch: React.FC<Props> = ({ ...props }) => {
+const Reel: React.FC<Props> = ({ ...props }) => {
   return (
     <Svg
       width='388'
@@ -55,4 +51,4 @@ const Watch: React.FC<Props> = ({ ...props }) => {
   );
 };
 
-export default Watch;
+export default Reel;
