@@ -25,9 +25,10 @@ export default StyleSheet.create({
 
   boxb: {
     height: 105,
+    display: 'flex',
+    alignItems: 'flex-start',
     justifyContent: 'center',
     alignSelf: 'stretch',
-    alignItems: 'center',
     backgroundColor: 'transparent',
     borderWidth: 3,
     borderStyle: 'dashed',
@@ -36,9 +37,10 @@ export default StyleSheet.create({
 
   boxc: {
     height: 309,
+    display: 'flex',
+    alignItems: 'flex-start',
     justifyContent: 'center',
     alignSelf: 'stretch',
-    alignItems: 'center',
     backgroundColor: 'transparent',
     borderWidth: 3,
     borderStyle: 'dashed',
@@ -47,9 +49,10 @@ export default StyleSheet.create({
 
   boxd1: {
     height: 284,
+    display: 'flex',
+    alignItems: 'flex-start',
     justifyContent: 'center',
     alignSelf: 'stretch',
-    alignItems: 'center',
     backgroundColor: 'transparent',
     borderWidth: 3,
     borderStyle: 'dashed',
@@ -58,9 +61,10 @@ export default StyleSheet.create({
 
   boxd2: {
     height: 156,
+    display: 'flex',
+    alignItems: 'flex-start',
     justifyContent: 'center',
     alignSelf: 'stretch',
-    alignItems: 'center',
     backgroundColor: 'transparent',
     borderWidth: 3,
     borderStyle: 'dashed',
@@ -69,9 +73,10 @@ export default StyleSheet.create({
 
   boxe: {
     height: 331,
+    display: 'flex',
+    alignItems: 'flex-start',
     justifyContent: 'center',
     alignSelf: 'stretch',
-    alignItems: 'center',
     backgroundColor: 'transparent',
     borderWidth: 3,
     borderStyle: 'dashed',
@@ -80,9 +85,10 @@ export default StyleSheet.create({
 
   boxf: {
     height: 125,
+    display: 'flex',
+    alignItems: 'flex-start',
     justifyContent: 'center',
     alignSelf: 'stretch',
-    alignItems: 'center',
     backgroundColor: 'transparent',
     borderWidth: 3,
     borderStyle: 'dashed',
@@ -91,9 +97,10 @@ export default StyleSheet.create({
 
   boxg: {
     height: 814,
+    display: 'flex',
+    alignItems: 'flex-start',
     justifyContent: 'center',
     alignSelf: 'stretch',
-    alignItems: 'center',
     backgroundColor: 'transparent',
     borderWidth: 3,
     borderStyle: 'dashed',
@@ -102,9 +109,11 @@ export default StyleSheet.create({
 
   boxh: {
     height: 155,
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'flex-start',
     justifyContent: 'center',
     alignSelf: 'stretch',
-    alignItems: 'center',
     backgroundColor: 'transparent',
     borderWidth: 3,
     borderStyle: 'dashed',
