@@ -8,43 +8,47 @@ interface Props {
 const Verified: React.FC<Props> = ({ ...props }) => {
   return (
     <Svg
-      width='36'
-      height='36'
-      viewBox='0 0 36 36'
+      width='57'
+      height='57'
+      viewBox='0 0 57 57'
 
       fill='none'
       {...props}
     >
       <Rect
-        x='4.75836'
-        y='4.7583'
+        x='14.7584'
+        y='14.7583'
         width='26'
         height='26'
         fill='#3797F0'
       />
       <Rect
-        x='13.0001'
+        x='23.0001'
+        y='10'
         width='26'
         height='26'
-        transform='rotate(30 13.0001 0)'
+        transform='rotate(30 23.0001 10)'
         fill='#3797F0'
       />
       <Rect
-        y='13' width='26' height='26'
-        transform='rotate(-30 0 13)'
+        x='10'
+        y='23'
+        width='26'
+        height='26'
+        transform='rotate(-30 10 23)'
         fill='#3797F0'
       />
       <Path
-        d='M24.7584 14.7583L16.2584 22.7583'
+        d='M34.7584 24.7583L26.2584 32.7583'
         stroke='black'
-        stroke-width='4'
-        stroke-linecap='round'
+        strokeWidth='4'
+        strokeLinecap='round'
       />
       <Path
-        d='M11.7584 18.7583L16.2584 22.7583'
+        d='M21.7584 28.7583L26.2584 32.7583'
         stroke='black'
-        stroke-width='4'
-        stroke-linecap='round'
+        strokeWidth='4'
+        strokeLinecap='round'
       />
     </Svg>
   );

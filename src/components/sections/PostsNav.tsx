@@ -1,12 +1,12 @@
-import React from "react";
-import { View } from "react-native";
+import React from 'react';
+import { View } from 'react-native';
 import Grid from '../buttons/posts-nav/Grid';
 import Reel from '../buttons/posts-nav/Reel';
 import Tagged from '../buttons/posts-nav/Tagged';
-import styles from "../../styles/styles";
+import styles from '../../styles/styles';
 
 interface Props {
-  // Add more prop types here
+  activeComponent: number;
 };
 
 const PostsNav: React.FC<Props> = ({ children, ...props }) => {
@@ -15,9 +15,9 @@ const PostsNav: React.FC<Props> = ({ children, ...props }) => {
 
       {/* All components contained in PostsNav can be
       found in components/buttons/posts-nav */}
-      <Grid />
-      <Reel />
-      <Tagged />
+      {props.activeComponent == 0 ? <Grid switch={1} /> : <Grid switch={0} />}
+      {props.activeComponent == 1 ? <Reel switch={1} /> : <Reel switch={0} />}
+      {props.activeComponent == 2 ? <Tagged switch={1} /> : <Tagged switch={0} />}
 
       {/* All child components */}
       {children}

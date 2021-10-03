@@ -24,12 +24,10 @@ export default function App() {
       </TopPhoneNav>
 
       {/* TopNav component | Box-b */}
-      <TopNav />
+      <TopNav user='Brlaney94' verified={true} />
 
       {/* Box-c | profile image badge - posts - followers - following */}
-      <StatsNav>
-        <Text style={styles.boxText}>Stats</Text>
-      </StatsNav>
+      <StatsNav />
 
       {/* Box-d | user bio */}
       <Bio>
@@ -45,12 +43,10 @@ export default function App() {
       <Reels />
 
       {/* PostsNav component | Box-f */}
-      <PostsNav />
+      <PostsNav activeComponent={0} />
 
       {/* Box-g | posts */}
-      <Posts>
-        <Text style={styles.boxText}>Posts</Text>
-      </Posts>
+      <Posts />
 
       {/* BottomNav component | Box-h */}
       <BottomNav />
