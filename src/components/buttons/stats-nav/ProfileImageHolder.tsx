@@ -19,7 +19,12 @@ stroke={props.iconState.active ? 'white' : '#C4C4C4'}
 const ProfileImageHolder: React.FC<Props> = ({ ...props }) => {
   return (
     <View style={styles.statsNavLeftEnd} {...props}>
-      <Svg width='356' height='309' viewBox='0 0 356 309' fill='none' >
+      <Svg
+        width='356'
+        height='309'
+        viewBox='0 0 356 309'
+        fill='none'
+      >
         <Circle
           cx='178'
           cy='155'

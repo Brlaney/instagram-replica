@@ -18,9 +18,7 @@ export default StyleSheet.create({
     alignSelf: 'stretch',
     alignItems: 'center',
     backgroundColor: 'transparent',
-    borderWidth: 2,
-    borderStyle: 'dashed',
-    borderColor: '#EF2917'
+    borderWidth: 0,
   },
 
   boxb: {
@@ -31,15 +29,75 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
     alignSelf: 'stretch',
     backgroundColor: 'transparent',
+    borderWidth: 0,
   },
-
-  boxc: {
+  
+  boxcRow: {
     height: 309,
     display: 'flex',
-    alignItems: 'flex-start',
-    justifyContent: 'center',
+    flexDirection: 'row',
     alignSelf: 'stretch',
     backgroundColor: 'transparent',
+    borderWidth: 0,
+  },
+
+  boxcCol1: {
+    height: 309,
+    width: 356,
+    display: 'flex',
+    alignItems: 'flex-start',
+    justifyContent: 'space-between',
+    alignSelf: 'stretch',
+    backgroundColor: 'transparent',
+    borderWidth: 0,
+  },
+
+  boxcCol2: {
+    width: 814,
+    height: 309,
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    alignSelf: 'stretch',
+    justifyContent: 'center',
+    backgroundColor: 'transparent',
+    borderWidth: 0,
+  },
+
+  boxChild1: {
+    width: 181,
+    height: 309,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  boxChild2: {
+    width: 181,
+    height: 309,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  boxChild3: {
+    width: 181,
+    height: 309,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  statsTextr1: {
+    fontSize: 42,
+    fontWeight: 'bold',
+    alignSelf: 'center',
+    letterSpacing: 1,
+    color: 'white',
+  },
+
+  statsTextr2: {
+    fontSize: 34,
+    alignSelf: 'center',
+    letterSpacing: 1,
+    color: 'white',
   },
 
   boxd1: {
@@ -49,21 +107,18 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'stretch',
     backgroundColor: 'transparent',
-    borderWidth: 2,
-    borderStyle: 'dashed',
-    borderColor: 'white'
+    borderWidth: 0,
   },
 
   boxd2: {
     height: 156,
     display: 'flex',
-    alignItems: 'flex-start',
+    flexDirection: 'row',
+    alignItems: 'center',
     justifyContent: 'center',
-    alignSelf: 'stretch',
+    // alignSelf: 'stretch',
     backgroundColor: 'transparent',
-    borderWidth: 2,
-    borderStyle: 'dashed',
-    borderColor: 'white'
+    borderWidth: 0,
   },
 
   boxe: {
@@ -73,6 +128,7 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'stretch',
     backgroundColor: 'transparent',
+    borderWidth: 0,
   },
 
   boxf: {
@@ -82,6 +138,7 @@ export default StyleSheet.create({
     flexWrap: 'nowrap',
     flexDirection: 'row',
     backgroundColor: 'transparent',
+    borderWidth: 0,
   },
 
   boxg: {
@@ -94,6 +151,7 @@ export default StyleSheet.create({
     alignSelf: 'stretch',
     backgroundColor: 'transparent',
     overflow: 'hidden',
+    borderWidth: 0,
   },
 
   boxh: {
@@ -104,6 +162,7 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'stretch',
     backgroundColor: 'transparent',
+        borderWidth: 0,
   },
 
   boxText: {
@@ -147,8 +206,6 @@ export default StyleSheet.create({
   },
 
   postsNavLeft: {
-    minWidth: 388,
-    maxWidth: 388,
     width: 388,
     height: 125,
     marginRight: 3,
@@ -219,6 +276,37 @@ export default StyleSheet.create({
   username: {
     fontSize: 42,
     color: 'white'
-  }
+  },
+
+  wideButton: {
+    display: 'flex',
+    flexDirection: 'row',
+    width: 303,
+    height: 96,
+    borderWidth: 3,
+    borderColor: '#363636',
+    borderRadius: 10,
+    backgroundColor: 'transparent',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  smallButton: {
+    width: 96,
+    height: 96,
+    borderWidth: 3,
+    borderColor: '#363636',
+    borderRadius: 10,
+    backgroundColor: 'transparent',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  buttonText: {
+    fontSize: 34,
+    alignSelf: 'center',
+    letterSpacing: 1,
+    color: 'white',
+  },
   
 });

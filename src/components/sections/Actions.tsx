@@ -1,14 +1,21 @@
-import React from "react";
-import { View } from "react-native";
-import styles from "../../styles/styles";
+import React from 'react';
+import { View } from 'react-native';
+import WideBtn from '../buttons/actions/WideBtn';
+import SmallBtn from '../buttons/actions/SmallBtn';
+import styles from '../../styles/styles';
 
-interface Props {
-  // Add more prop types here
-};
-
-const Actions: React.FC<Props> = ({ children, ...props }) => {
+const Actions: React.FC<{}> = ({ children, ...props }) => {
   return (
     <View style={styles.boxd2} {...props}>
+
+      {/* Three wide buttons */}
+      <WideBtn index={1} btnText='Following' />
+      <WideBtn index={2} btnText='Message' />
+      <WideBtn index={3} btnText='Email' />
+
+      {/* One small dropdown button */}
+      <SmallBtn />
+
       {children}
     </View>
   );

@@ -19,9 +19,7 @@ export default function App() {
     <View style={styles.container}>
 
       {/* Box-a | iPhone top nav */}
-      <TopPhoneNav>
-        <Text style={styles.boxText}>Blocked zone</Text>
-      </TopPhoneNav>
+      <TopPhoneNav />
 
       {/* TopNav component | Box-b */}
       <TopNav user='Brlaney94' verified={true} />
@@ -35,9 +33,7 @@ export default function App() {
       </Bio>
 
       {/* Box-d | following btn - message btn - email btn - dropdown btn */}
-      <Actions>
-        <Text style={styles.boxText}>Actions</Text>
-      </Actions>
+      <Actions />
 
       {/* Box-e | reels */}
       <Reels />

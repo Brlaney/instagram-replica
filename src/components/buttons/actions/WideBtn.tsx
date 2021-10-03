@@ -1,8 +1,11 @@
 import React from 'react';
-import { Button } from 'react-native';
+import { Text, Pressable } from 'react-native';
+import SmallArrow from './SmallArrow';
+import styles from '../../../styles/styles';
 
 interface Props {
-  titleText: string;
+  index: number;
+  btnText: string;
 };
 
 const WideBtn: React.FC<Props> = ({ ...props }) => {
@@ -12,13 +15,16 @@ const WideBtn: React.FC<Props> = ({ ...props }) => {
   };
 
   return (
-    <Button
-      title={props.titleText}
-      color='transparent'
-      accessibilityLabel='A re-usable wide button component made with react native'
-      onPress={() => { handleNothing }}
+    <Pressable
+      style={styles.wideButton}
+      onPress={handleNothing}
       {...props}
-    />
+    >
+      <Text style={styles.buttonText}>
+        {props.btnText}
+      </Text>
+      {props.index == 1 ? <SmallArrow /> : null}
+    </Pressable>
   );
 };
 

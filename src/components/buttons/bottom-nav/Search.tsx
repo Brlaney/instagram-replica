@@ -1,16 +1,12 @@
 import * as React from 'react';
 import Svg, { Path, Circle } from 'react-native-svg';
 
-interface Props {
-  // Add more prop types here
-};
-
-const Search: React.FC<Props> = ({ ...props }) => {
+const Search: React.FC<{}> = ({ ...props }) => {
   return (
     <Svg
       width='234'
-      height='159'
-      viewBox='0 0 234 159'
+      height='155'
+      viewBox='0 0 234 155'
       fill='none'
       {...props}
     >
