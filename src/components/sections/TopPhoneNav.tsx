@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import BlockedZone from '../buttons/top-phone-nav/BlockedZone';
+import BlockedZone from '../buttons/phone-no-zone/BlockedZone';
 import styles from '../../styles/styles';
 
 interface Props {

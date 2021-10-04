@@ -16,7 +16,7 @@ const WideBtn: React.FC<Props> = ({ ...props }) => {
 
   return (
     <Pressable
-      style={styles.wideButton}
+      style={props.index == 1 ? styles.wideBtnVar1 : styles.wideBtnVar2}
       onPress={handleNothing}
       {...props}
     >

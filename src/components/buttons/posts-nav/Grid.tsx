@@ -4,7 +4,6 @@ import { View } from 'react-native';
 import styles from '../../../styles/styles';
 
 interface Props {
-  // Add more prop types here
   switch: number;
 };
 

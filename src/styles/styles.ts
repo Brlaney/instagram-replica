@@ -116,7 +116,7 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    // alignSelf: 'stretch',
+    alignSelf: 'stretch',
     backgroundColor: 'transparent',
     borderWidth: 0,
   },
@@ -162,7 +162,18 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'stretch',
     backgroundColor: 'transparent',
-        borderWidth: 0,
+    borderWidth: 0,
+  },
+
+  bottomNoZone: {
+    height: 96,
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+    alignSelf: 'stretch',
+    backgroundColor: 'transparent',
+    borderWidth: 0,
   },
 
   boxText: {
@@ -275,14 +286,33 @@ export default StyleSheet.create({
 
   username: {
     fontSize: 42,
+    letterSpacing: 2,
+    fontWeight: 'bold',
     color: 'white'
   },
 
-  wideButton: {
+  wideBtnVar1: {
     display: 'flex',
     flexDirection: 'row',
     width: 303,
     height: 96,
+    marginLeft: 45,
+    marginRight: 12,
+    borderWidth: 3,
+    borderColor: '#363636',
+    borderRadius: 10,
+    backgroundColor: 'transparent',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  wideBtnVar2: {
+    display: 'flex',
+    flexDirection: 'row',
+    width: 303,
+    height: 96,
+    marginLeft: 12,
+    marginRight: 12,
     borderWidth: 3,
     borderColor: '#363636',
     borderRadius: 10,
@@ -292,8 +322,12 @@ export default StyleSheet.create({
   },
 
   smallButton: {
+    display: 'flex',
+    flexDirection: 'row',
     width: 96,
     height: 96,
+    marginLeft: 12,
+    marginRight: 45,
     borderWidth: 3,
     borderColor: '#363636',
     borderRadius: 10,
@@ -305,6 +339,18 @@ export default StyleSheet.create({
   buttonText: {
     fontSize: 34,
     alignSelf: 'center',
+    letterSpacing: 1,
+    color: 'white',
+  },
+
+  header: {
+    fontSize: 34,
+    letterSpacing: 1,
+    color: 'white',
+  },
+
+  bio: {
+    fontSize: 28,
     letterSpacing: 1,
     color: 'white',
   },

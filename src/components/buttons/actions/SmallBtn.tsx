@@ -3,11 +3,8 @@ import { Pressable } from 'react-native';
 import DownArrow from './DownArrow';
 import styles from '../../../styles/styles';
 
-interface Props {
-  // Any props passed must be typed here
-};
 
-const SmallBtn: React.FC<Props> = ({ ...props }) => {
+const SmallBtn: React.FC<{}> = ({ ...props }) => {
 
   function handleNothing() {
     return null;
@@ -15,9 +12,8 @@ const SmallBtn: React.FC<Props> = ({ ...props }) => {
 
   return (
     <Pressable
-      style={styles.wideButton}
+      style={styles.smallButton}
       onPress={handleNothing}
-      {...props}
     >
       <DownArrow />
   </Pressable>
