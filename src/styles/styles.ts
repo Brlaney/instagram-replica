@@ -344,17 +344,28 @@ export default StyleSheet.create({
   },
 
   header: {
-    marginLeft: 45,
     fontSize: 34,
     letterSpacing: 1,
     color: 'white',
+    marginLeft: 45,
+    marginBottom: 6,
   },
 
   bio: {
-    marginLeft: 45,
     fontSize: 28,
     letterSpacing: 1,
     color: 'white',
+    marginLeft: 45,
+    marginTop: 6,
+    marginBottom: 6,
+  },
+
+  bioBottom: {
+    fontSize: 28,
+    letterSpacing: 1,
+    color: 'white',
+    marginLeft: 45,
+    marginTop: 6,
   },
   
 });

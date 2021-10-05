@@ -25,7 +25,7 @@ const Bio: React.FC<Props> = ({ children, ...props }) => {
       <Text style={styles.bio}>
         {props.bio3}
       </Text>
-      <Text style={styles.bio}>
+      <Text style={styles.bioBottom}>
         {props.bio4}
       </Text>
       {children}

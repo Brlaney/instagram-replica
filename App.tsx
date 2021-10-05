@@ -46,7 +46,7 @@ export default function App() {
       <Reels />
 
       {/* PostsNav component | Box-f */}
-      <PostsNav activeComponent={0} />
+      <PostsNav activeComponent={1} />
 
       {/* Box-g | posts */}
       <Posts />

@@ -3,7 +3,6 @@ import Svg, { Path, Rect } from 'react-native-svg';
 import { View } from 'react-native';
 import styles from '../../../styles/styles';
 
-
 interface Props {
   // Add more prop types here  
   switch: number;
@@ -36,24 +35,24 @@ const Reel: React.FC<Props> = ({ ...props }) => {
           width='52'
           height='52'
           rx='14.5'
-          stroke={props.switch == 1 ? colors[0] : colors[1]}
+          stroke={props.switch == 2 ? colors[0] : colors[1]}
           strokeWidth='6'
         />
         <Path
           d='M178.5 68.5L195 62.5'
-          stroke={props.switch == 1 ? colors[0] : colors[1]}
+          stroke={props.switch == 2 ? colors[0] : colors[1]}
           strokeWidth='5'
           strokeLinecap='round'
         />
         <Path
           d='M211.5 66L195 72'
-          stroke={props.switch == 1 ? colors[0] : colors[1]}
+          stroke={props.switch == 2 ? colors[0] : colors[1]}
           strokeWidth='5'
           strokeLinecap='round'
         />
         <Path
           d='M195 72V62.5'
-          stroke={props.switch == 1 ? colors[0] : colors[1]}
+          stroke={props.switch == 2 ? colors[0] : colors[1]}
           strokeWidth='5'
           strokeLinecap='round'
         />
@@ -61,7 +60,7 @@ const Reel: React.FC<Props> = ({ ...props }) => {
           y='119'
           width='388'
           height='3'
-          fill={props.switch == 1 ? colors[0] : 'none'}
+          fill={props.switch == 2 ? colors[0] : 'none'}
         />
       </Svg>
     </View>

@@ -49,19 +49,19 @@ const BlockedZone: React.FC<{}> = ({ ...props }) => {
       <Path
         d='M979 71.9998C986.5 64.045 992.795 64.011 999 64C1005.29 63.9888 1012 64.4996 1019 71.9999'
         stroke='white'
-        stroke-width='6'
-        stroke-linecap='square'
+        strokeWidth='6'
+        strokeLinecap='square'
       />
       <Path
         d='M987.5 81.0001C991.437 77.0003 995.742 76.5055 999 76.5C1002.3 76.4944 1006.82 77.2288 1010.5 81.0001'
         stroke='white'
-        stroke-width='6'
-        stroke-linecap='square'
+        strokeWidth='6'
+        strokeLinecap='square'
       />
       <Path
         d='M1098 62.5H1050C1045.31 62.5 1041.5 66.3056 1041.5 71V87C1041.5 91.6944 1045.31 95.5 1050 95.5H1098C1102.69 95.5 1106.5 91.6944 1106.5 87V71C1106.5 66.3056 1102.69 62.5 1098 62.5Z'
         stroke='#666666'
-        stroke-width='3'
+        strokeWidth='3'
       />
       <Path
         d='M1111 73V85C1113 85 1114.97 84 1115 79C1115.03 74 1113 73 1111 73Z'

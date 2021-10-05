@@ -1,16 +1,16 @@
 <div align="center" id="top">
   <p>
-    <a href="https://github.com/brlaney/instagram-copy/commits/master">
-      <img src="https://img.shields.io/github/last-commit/brlaney/instagram-copy?style=flat-square">
+    <a href="https://github.com/brlaney/instagram-replica/commits/master">
+      <img src="https://img.shields.io/github/last-commit/brlaney/instagram-replica?style=flat-square">
     </a>
     <a href="#status"><img src="https://img.shields.io/badge/Maintained-yes-green.svg?style=flat-square"></a>
   </p>
 </div>
 
 <div align="center">
-  <h1>Mock Instagram React Native App</h1>
+  <h1>Instagram Replica</h1>
   <p style="text-align: justify">
-    A <b>React Native</b> app that uses Typescript</br>
+    A <b>React Native</b> app that uses Typescript to </br>recreate the mobile Instagram application.
   </p>
 </div>
 
