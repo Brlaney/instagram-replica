@@ -344,12 +344,14 @@ export default StyleSheet.create({
   },
 
   header: {
+    marginLeft: 45,
     fontSize: 34,
     letterSpacing: 1,
     color: 'white',
   },
 
   bio: {
+    marginLeft: 45,
     fontSize: 28,
     letterSpacing: 1,
     color: 'white',

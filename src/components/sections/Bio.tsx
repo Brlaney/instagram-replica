@@ -7,6 +7,7 @@ interface Props {
   bio1: string;
   bio2: string;
   bio3: string;
+  bio4: string;
 };
 
 const Bio: React.FC<Props> = ({ children, ...props }) => {
@@ -23,6 +24,9 @@ const Bio: React.FC<Props> = ({ children, ...props }) => {
       </Text>
       <Text style={styles.bio}>
         {props.bio3}
+      </Text>
+      <Text style={styles.bio}>
+        {props.bio4}
       </Text>
       {children}
     </View>

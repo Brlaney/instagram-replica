@@ -16,9 +16,9 @@ const Grid: React.FC<Props> = ({ ...props }) => {
   return (
     <View style={styles.postsNavLeft} {...props}>
       <Svg
-        width='338'
+        width='388'
         height='125'
-        viewBox='0 0 338 125'
+        viewBox='0 0 388 125'
         fill='none'
         {...props}
       >

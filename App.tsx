@@ -36,6 +36,7 @@ export default function App() {
         bio1={data.bio1}
         bio2={data.bio2}
         bio3={data.bio3}
+        bio4={data.bio4}
       />
 
       {/* Box-d | following btn - message btn - email btn - dropdown btn */}
