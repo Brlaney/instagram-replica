@@ -360,6 +360,15 @@ export default StyleSheet.create({
     marginBottom: 6,
   },
 
+  bioLink: {
+    fontSize: 28,
+    letterSpacing: 1,
+    color: '#3797F0',
+    marginLeft: 45,
+    marginTop: 6,
+    marginBottom: 6,
+  },
+
   bioBottom: {
     fontSize: 28,
     letterSpacing: 1,

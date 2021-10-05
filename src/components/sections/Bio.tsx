@@ -6,8 +6,9 @@ interface Props {
   user: string;
   bio1: string;
   bio2: string;
-  bio3: string;
-  bio4: string;
+  f1: string;
+  f2: string;
+  nOthers: number;
 };
 
 const Bio: React.FC<Props> = ({ children, ...props }) => {
@@ -19,14 +20,14 @@ const Bio: React.FC<Props> = ({ children, ...props }) => {
       <Text style={styles.bio}>
         {props.bio1}
       </Text>
-      <Text style={styles.bio}>
+      <Text style={styles.bioLink}>
         {props.bio2}
       </Text>
       <Text style={styles.bio}>
-        {props.bio3}
-      </Text>
-      <Text style={styles.bioBottom}>
-        {props.bio4}
+        Followed by
+        <Text style={{ fontWeight: 'bold' }}> {props.f1},</Text>
+        <Text style={{ fontWeight: 'bold' }}> {props.f2},</Text> and
+        <Text style={{ fontWeight: 'bold' }}> {props.nOthers} others</Text>
       </Text>
       {children}
     </View>
