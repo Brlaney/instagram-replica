@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { StackScreenProps } from '@react-navigation/stack';
 import { Text, TouchableOpacity, View } from 'react-native';
-import { RootStackParamList } from '../../lib/types';
-import styles from '../../styles/notfound';
+import { RootStackParamList } from '../lib/types';
+import styles from '../styles/notfound';
 
 export default function NotFound({
   navigation,

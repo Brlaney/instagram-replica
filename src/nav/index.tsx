@@ -2,7 +2,7 @@ import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import NotFoundScreen from '../screens/NotFound';
-import { RootStackParamList } from '../../lib/types';
+import { RootStackParamList } from '../lib/types';
 import Navigate from './Navigate';
 import LinkingConfiguration from './LinkingConfiguration';
 

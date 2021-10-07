@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { View, Text } from 'react-native';
-import VerifiedCheck from '../top-nav/VerifiedCheck';
+import VerifiedCheck from './VerifiedCheck';
 import styles from '../../../styles/styles';
 
 interface Props {

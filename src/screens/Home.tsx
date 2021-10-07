@@ -1,22 +1,21 @@
-import * as React from 'react';
-import { Text, View } from 'react-native';
+import React from 'react';
+import { View } from 'react-native';
 
 // Components are styled as a, b, c, d1, d2, e, f, g, & h respectively
-import TopPhoneNav from './src/components/sections/TopPhoneNav';
-import TopNav from './src/components/sections/TopNav';
-import StatsNav from './src/components/sections/StatsNav';
-import Bio from './src/components/sections/Bio';
-import Actions from './src/components/sections/Actions';
-import Reels from './src/components/sections/Reels';
-import PostsNav from './src/components/sections/PostsNav';
-import Posts from './src/components/sections/Posts';
-import BottomNav from './src/components/sections/BottomNav';
-import Btm from './src/components/sections/Btm';
-import { data } from './src/lib/data';
-import styles from '../../styles/styles';
+import TopPhoneNav from '../components/sections/TopPhoneNav';
+import TopNav from '../components/sections/TopNav';
+import StatsNav from '../components/sections/StatsNav';
+import Bio from '../components/sections/Bio';
+import Actions from '../components/sections/Actions';
+import Reels from '../components/sections/Reels';
+import PostsNav from '../components/sections/PostsNav';
+import Posts from '../components/sections/Posts';
+import BottomNav from '../components/sections/BottomNav';
+import Btm from '../components/sections/Btm';
+import { data } from '../lib/data';
+import styles from '../styles/styles';
 
-
-export default function User() {
+export default function Home() {
   return (
     <View style={styles.container}>
 
@@ -62,5 +61,4 @@ export default function User() {
       <Btm />
     </View>
   );
-};
-
+}
