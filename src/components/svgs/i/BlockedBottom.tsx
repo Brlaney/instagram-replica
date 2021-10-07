@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Svg, { Path } from 'react-native-svg';
 
-const BottomZone: React.FC<{}> = ({ ...props }) => {
+const BlockedBottom: React.FC<{}> = ({ ...props }) => {
   return (
     <Svg
       width='1171'
@@ -20,4 +20,4 @@ const BottomZone: React.FC<{}> = ({ ...props }) => {
   );
 };
 
-export default BottomZone;
+export default BlockedBottom;

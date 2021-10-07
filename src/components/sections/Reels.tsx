@@ -1,13 +1,9 @@
 import React from "react";
 import { View } from "react-native";
-import Holder from '../buttons/reels/Holder';
+import Holder from '../svgs/e/Reel';
 import styles from "../../styles/styles";
 
-interface Props {
-  // Add more prop types here
-};
-
-const Reels: React.FC<Props> = ({ children, ...props }) => {
+const Reels: React.FC<{}> = ({ children, ...props }) => {
   return (
     <View style={styles.boxe} {...props}>
 

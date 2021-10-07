@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import ProfileImageHolder from '../buttons/stats-nav/ProfileImageHolder';
+import ProfileImage from '../svgs/c/ProfileImage';
 import styles from '../../styles/styles';
 
 interface Props {
@@ -15,7 +15,7 @@ const StatsNav: React.FC<Props> = ({ children, ...props }) => {
 
       {/* Profile image container */}
       <View style={styles.boxcCol1}>
-        <ProfileImageHolder />
+        <ProfileImage />
       </View>
 
       {/* User stats display */}

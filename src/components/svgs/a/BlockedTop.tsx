@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Svg, { Path, Circle, Rect } from 'react-native-svg';
 
-const BlockedZone: React.FC<{}> = ({ ...props }) => {
+const BlockedTop: React.FC<{}> = ({ ...props }) => {
   return (
     <Svg
       width='1170'
@@ -79,4 +79,4 @@ const BlockedZone: React.FC<{}> = ({ ...props }) => {
   );
 };
 
-export default BlockedZone;
+export default BlockedTop;

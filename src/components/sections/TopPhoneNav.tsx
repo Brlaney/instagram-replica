@@ -1,13 +1,9 @@
 import React from 'react';
 import { View } from 'react-native';
-import BlockedZone from '../buttons/phone-no-zone/BlockedZone';
+import BlockedZone from '../svgs/a/BlockedTop';
 import styles from '../../styles/styles';
 
-interface Props {
-  // Add more prop types here
-};
-
-const TopPhoneNav: React.FC<Props> = ({ children, ...props }) => {
+const TopPhoneNav: React.FC<{}> = ({ children, ...props }) => {
   return (
     <View style={styles.boxa} {...props}>
 

@@ -8,15 +8,7 @@ import Svg, {
 } from 'react-native-svg';
 import styles from '../../../styles/styles';
 
-interface Props {
-  // Add more prop types here
-};
-
-/* 
-stroke={props.iconState.active ? 'white' : '#C4C4C4'} 
-*/
-
-const ProfileImageHolder: React.FC<Props> = ({ ...props }) => {
+const ProfileImage: React.FC<{}> = ({ ...props }) => {
   return (
     <View style={styles.statsNavLeftEnd} {...props}>
       <Svg
@@ -24,6 +16,7 @@ const ProfileImageHolder: React.FC<Props> = ({ ...props }) => {
         height='309'
         viewBox='0 0 356 309'
         fill='none'
+        {...props}
       >
         <Circle
           cx='178'
@@ -61,4 +54,4 @@ const ProfileImageHolder: React.FC<Props> = ({ ...props }) => {
   );
 };
 
-export default ProfileImageHolder;
+export default ProfileImage;

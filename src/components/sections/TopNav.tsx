@@ -1,8 +1,8 @@
 import React from 'react';
 import { View } from 'react-native';
-import Back from '../buttons/top-nav/Back';
-import Actions from '../buttons/top-nav/Actions';
-import UserName from '../buttons/top-nav/UserName';
+import Back from '../svgs/b/Back';
+import Actions from '../svgs/b/Actions';
+import UserName from '../svgs/b/UserName';
 import styles from '../../styles/styles';
 
 interface Props {
@@ -16,7 +16,7 @@ const TopNav: React.FC<Props> = ({ children, ...props }) => {
     <View style={styles.boxb} {...props}>
 
       {/* All components contained in the top-nav 
-      component (box b) components/buttons/top-nav */}
+      component (box b) components/svgs/b/ */}
       <Back />
       <UserName user={props.user} verified={props.verified} />
       <Actions />

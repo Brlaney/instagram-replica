@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
-import WideBtn from '../buttons/actions/WideBtn';
-import SmallBtn from '../buttons/actions/SmallBtn';
+import WideBtn from '../svgs/d/WideBtn';
+import SmallBtn from '../svgs/d/SmallBtn';
 import styles from '../../styles/styles';
 
 const Actions: React.FC<{}> = ({ children, ...props }) => {

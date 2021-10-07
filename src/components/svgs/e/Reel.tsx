@@ -1,15 +1,7 @@
 import * as React from 'react';
 import Svg, { Circle, Rect } from 'react-native-svg';
 
-interface Props {
-  // Add more prop types here
-};
-
-/* 
-  stroke={props.iconState.active ? 'white' : '#C4C4C4'} 
-*/
-
-const Holder: React.FC<Props> = ({ ...props }) => {
+const Reel: React.FC<{}> = ({ ...props }) => {
   return (
     <Svg
       width='276'
@@ -41,4 +33,4 @@ const Holder: React.FC<Props> = ({ ...props }) => {
   );
 };
 
-export default Holder;
+export default Reel;

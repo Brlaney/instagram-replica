@@ -1,22 +1,18 @@
-import React from "react";
-import { View } from "react-native";
-import Home from '../buttons/bottom-nav/Home';
-import Search from '../buttons/bottom-nav/Search';
-import Tv from '../buttons/bottom-nav/Tv';
-import Shop from '../buttons/bottom-nav/Shop';
-import Profile from '../buttons/bottom-nav/Profile';
-import styles from "../../styles/styles";
+import React from 'react';
+import { View } from 'react-native';
+import Home from '../svgs/h/Home';
+import Search from '../svgs/h/Search';
+import Tv from '../svgs/h/Tv';
+import Shop from '../svgs/h/Shop';
+import Profile from '../svgs/h/Profile';
+import styles from '../../styles/styles';
 
-interface Props {
-  // Add more prop types here
-};
-
-const BottomNav: React.FC<Props> = ({ children, ...props }) => {
+const BottomNav: React.FC<{}> = ({ children, ...props }) => {
   return (
     <View style={styles.boxh} {...props}>
 
       {/* All components contained in BottomNav can be
-      found in components/buttons/bottom-nav */}
+      found in components/svgs/h */}
       <Home />
       <Search />
       <Tv />
@@ -25,6 +21,7 @@ const BottomNav: React.FC<Props> = ({ children, ...props }) => {
 
       {/* All child components */}
       {children}
+
     </View>
   );
 };
