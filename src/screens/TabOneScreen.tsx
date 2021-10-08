@@ -1,8 +1,7 @@
-import * as React from 'react';
+import React from 'react';
 import { View } from 'react-native';
 
-/* Sections components correspond to svg components
-as a, b, c, d1, d2, e, f, g, h, & i respectively.  */
+// Components are styled as a, b, c, d1, d2, e, f, g, & h respectively
 import TopPhoneNav from '../components/sections/TopPhoneNav';
 import TopNav from '../components/sections/TopNav';
 import StatsNav from '../components/sections/StatsNav';
@@ -16,25 +15,24 @@ import Btm from '../components/sections/Btm';
 import { data } from '../lib/data';
 import styles from '../styles/styles';
 
-
-export default function User() {
+export default function TabOneScreen() {
   return (
     <View style={styles.container}>
 
-      {/* Box a. | iPhone top nav */}
+      {/* Box-a | iPhone top nav */}
       <TopPhoneNav />
 
-      {/* Box b. | TopNav component */}
+      {/* TopNav component | Box-b */}
       <TopNav user='therock' verified={true} />
 
-      {/* Box c. | profile image badge - posts - followers - following */}
+      {/* Box-c | profile image badge - posts - followers - following */}
       <StatsNav
         nPosts='6,050'
         nFollowers='272M'
         nFollowing='443'
       />
 
-      {/* Box d1. | user bio */}
+      {/* Box-d | user bio */}
       <Bio
         user={data.user}
         bio1={data.bio1}
@@ -44,24 +42,23 @@ export default function User() {
         nOthers={data.nOthers}
       />
 
-      {/* Box d2. | following btn - message btn - email btn - dropdown btn */}
+      {/* Box-d | following btn - message btn - email btn - dropdown btn */}
       <Actions />
 
-      {/* Box e. | reels */}
+      {/* Box-e | reels */}
       <Reels />
 
-      {/* Box f. | PostsNav component */}
+      {/* PostsNav component | Box-f */}
       <PostsNav activeComponent={1} />
 
-      {/* Box g. | posts */}
+      {/* Box-g | posts */}
       <Posts />
 
-      {/* Box h. | BottomNav component */}
+      {/* BottomNav component | Box-h */}
       <BottomNav />
 
-      {/* Box i. | bottom of device */}
+      {/* No zone | bottom of device */}
       <Btm />
     </View>
   );
-};
-
+}

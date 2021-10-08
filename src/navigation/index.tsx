@@ -8,13 +8,13 @@ import { ColorSchemeName } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import NotFoundScreen from '../screens/NotFound';
 import { RootStackParamList } from '../lib/types';
-import Navigate from './Navigate';
+import BottomTabNavigator from './BottomTabNavigator';
 import LinkingConfiguration from './LinkingConfiguration';
 
 
 /* If you are not familiar with React Navigation, we recommend going through the
   'Fundamentals' guide: https://reactnavigation.org/docs/getting-started */
-export default function Nav({ colorScheme }:
+export default function Navigation({ colorScheme }:
   { colorScheme: ColorSchemeName }) {
   return (
     <NavigationContainer
@@ -34,7 +34,7 @@ const Stack = createStackNavigator<RootStackParamList>()
 function RootNavigator() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen name='Root' component={Navigate} />
+      <Stack.Screen name='Root' component={BottomTabNavigator} />
       <Stack.Screen
         name='NotFound'
         component={NotFoundScreen}

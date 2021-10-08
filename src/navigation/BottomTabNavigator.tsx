@@ -2,22 +2,24 @@ import * as React from 'react';
 import { Ionicons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
-import Home from '../screens/Home';
-import User from '../screens/User';
+import Colors from '../lib/constants/Colors';
+import useColorScheme from '../lib/hooks/useColorScheme';
+import TabOneScreen from '../screens/TabOneScreen';
+import TabTwoScreen from '../screens/TabTwoScreen';
 import {
   BottomTabParamList,
-  HomeParamList,
-  UserParamList,
+  TabOneParamList,
+  TabTwoParamList,
 } from '../lib/types';
+
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
 export default function BottomTabNavigator() {
+  const colorScheme = useColorScheme();
 
   return (
-    <BottomTab.Navigator
-      initialRouteName='TabOne'
-    >
+    <BottomTab.Navigator initialRouteName='TabOne'>
       <BottomTab.Screen
         name='TabOne'
         component={TabOneNavigator}
@@ -53,30 +55,30 @@ function TabBarIcon(props: {
   />
 };
 
-// Each tab has its own navigation stack, you can read more about this pattern here:
-// https://reactnavigation.org/docs/tab-based-navigation#a-stack-navigator-for-each-tab
-const TabOneStack = createStackNavigator<HomeParamList>();
+/* Each tab has its own navigation stack, you can read more about this pattern here:
+https://reactnavigation.org/docs/tab-based-navigation#a-stack-navigator-for-each-tab */
+const TabOneStack = createStackNavigator<TabOneParamList>();
 
 function TabOneNavigator() {
   return (
     <TabOneStack.Navigator>
       <TabOneStack.Screen
-        name='Home'
-        component={Home}
+        name='TabOneScreen'
+        component={TabOneScreen}
         options={{ headerTitle: 'Homepage' }}
       />
     </TabOneStack.Navigator>
   )
 };
 
-const TabTwoStack = createStackNavigator<UserParamList>()
+const TabTwoStack = createStackNavigator<TabTwoParamList>();
 
 function TabTwoNavigator() {
   return (
     <TabTwoStack.Navigator>
       <TabTwoStack.Screen
-        name='User'
-        component={User}
+        name='TabTwoScreen'
+        component={TabTwoScreen}
         options={{ headerTitle: 'User profile' }}
       />
     </TabTwoStack.Navigator>

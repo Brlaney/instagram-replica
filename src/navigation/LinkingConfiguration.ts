@@ -8,12 +8,12 @@ export default {
         screens: {
           TabOne: {
             screens: {
-              Home: 'one',
+              TabOneScreen: 'one',
             },
           },
           TabTwo: {
             screens: {
-              User: 'two',
+              TabTwoScreen: 'two',
             },
           },
         },
