@@ -8,10 +8,10 @@ export type BottomTabParamList = {
   TabTwo: undefined;
 };
 
-export type HomeParamList = {
+export type TabOneParamList = {
   Home: undefined;
 };
 
-export type UserParamList = {
+export type TabTwoParamList = {
   User: undefined;
 };
