@@ -2,8 +2,8 @@ import * as React from 'react';
 import { Ionicons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
-import Colors from '../lib/constants/Colors';
-import useColorScheme from '../lib/hooks/useColorScheme';
+// import Colors from '../lib/constants/Colors';
+// import useColorScheme from '../lib/hooks/useColorScheme';
 import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
 import {
@@ -16,10 +16,10 @@ import {
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
 export default function BottomTabNavigator() {
-  const colorScheme = useColorScheme();
+  // const colorScheme = useColorScheme();
 
   return (
-    <BottomTab.Navigator initialRouteName='TabOne'>
+    <BottomTab.Navigator initialRouteName='TabOne' screenOptions={{ headerShown: false }}>
       <BottomTab.Screen
         name='TabOne'
         component={TabOneNavigator}
@@ -61,11 +61,10 @@ const TabOneStack = createStackNavigator<TabOneParamList>();
 
 function TabOneNavigator() {
   return (
-    <TabOneStack.Navigator>
+    <TabOneStack.Navigator screenOptions={{ headerShown: false }}>
       <TabOneStack.Screen
         name='TabOneScreen'
         component={TabOneScreen}
-        options={{ headerTitle: 'Homepage' }}
       />
     </TabOneStack.Navigator>
   )
@@ -75,11 +74,10 @@ const TabTwoStack = createStackNavigator<TabTwoParamList>();
 
 function TabTwoNavigator() {
   return (
-    <TabTwoStack.Navigator>
+    <TabTwoStack.Navigator screenOptions={{ headerShown: false }}>
       <TabTwoStack.Screen
         name='TabTwoScreen'
         component={TabTwoScreen}
-        options={{ headerTitle: 'User profile' }}
       />
     </TabTwoStack.Navigator>
   )
