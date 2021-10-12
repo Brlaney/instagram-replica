@@ -16,8 +16,6 @@ export type TabTwoParamList = {
   TabTwoScreen: undefined;
 };
 
-/*
-
 export type TabThreeParamList = {
   TabThreeScreen: undefined;
 };
@@ -29,5 +27,3 @@ export type TabFourParamList = {
 export type TabFiveParamList = {
   TabFiveScreen: undefined;
 };
-
-*/
