@@ -2,24 +2,36 @@ import * as React from 'react';
 import { Ionicons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
-// import Colors from '../lib/constants/Colors';
-// import useColorScheme from '../lib/hooks/useColorScheme';
+import Colors from '../lib/constants/Colors';
+import useColorScheme from '../lib/hooks/useColorScheme';
 import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
+/*
+import TabOneScreen from '../screens/TabOneScreen';
+import TabTwoScreen from '../screens/TabTwoScreen';
+import TabOneScreen from '../screens/TabOneScreen';
+*/
+
 import {
   BottomTabParamList,
   TabOneParamList,
   TabTwoParamList,
+  // TabThreeParamList,
+  // TabFourParamList,
+  // TabFiveParamList,
 } from '../lib/types';
 
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
 export default function BottomTabNavigator() {
-  // const colorScheme = useColorScheme();
+  const colorScheme = useColorScheme();
 
   return (
-    <BottomTab.Navigator initialRouteName='TabOne' screenOptions={{ headerShown: false }}>
+    <BottomTab.Navigator
+      initialRouteName='TabOne'
+      screenOptions={{ headerShown: false }}
+    >
       <BottomTab.Screen
         name='TabOne'
         component={TabOneNavigator}
@@ -38,6 +50,35 @@ export default function BottomTabNavigator() {
           ),
         }}
       />
+      {/*
+      <BottomTab.Screen 
+        name='TabThree'
+        component={TabThreeNavigator}
+        options={{
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon name='ios-code' color={color} />
+          ),
+        }}
+      />
+      <BottomTab.Screen 
+        name='TabFour'
+        component={TabFourNavigator}
+        options={{
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon name='ios-code' color={color} />
+          ),
+        }}
+      />
+      <BottomTab.Screen 
+        name='TabFive'
+        component={TabFiveNavigator}
+        options={{
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon name='ios-code' color={color} />
+          ),
+        }}
+      />
+      */}
     </BottomTab.Navigator>
   )
 };
@@ -82,3 +123,46 @@ function TabTwoNavigator() {
     </TabTwoStack.Navigator>
   )
 };
+
+/*
+
+const TabThreeStack = createStackNavigator<TabThreeParamList>();
+
+function TabThreeNavigator() {
+  return (
+    <TabThreeStack.Navigator screenOptions={{ headerShown: false }}>
+      <TabThreeStack.Screen
+        name='TabThreeScreen'
+        component={TabThreeScreen}
+      />
+    </TabThreeStack.Navigator>
+  )
+};
+
+const TabFourStack = createStackNavigator<TabFourParamList>();
+
+function TabFourNavigator() {
+  return (
+    <TabFourStack.Navigator screenOptions={{ headerShown: false }}>
+      <TabFourStack.Screen
+        name='TabFourScreen'
+        component={TabFourScreen}
+      />
+    </TabTwoStack.Navigator>
+  )
+};
+
+const TabFiveStack = createStackNavigator<TabFiveParamList>();
+
+function TabFiveNavigator() {
+  return (
+    <TabFiveStack.Navigator screenOptions={{ headerShown: false }}>
+      <TabFiveStack.Screen
+        name='TabFiveScreen'
+        component={TabFiveScreen}
+      />
+    </TabFiveStack.Navigator>
+  )
+};
+
+*/
