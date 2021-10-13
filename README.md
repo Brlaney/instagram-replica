@@ -51,7 +51,6 @@ Summary text goes here.
 
 - 💻 The following Technologies are used
   - [React Native](https://nextjs.org/)
-  - [Expose](https://github.com/)
   - [Typescript](https://www.typescriptlang.org/)
   - [Svg](https://sass-lang.com/documentation)
   
@@ -77,8 +76,6 @@ expo install
 yarn start
 ```
 
-Now navigate to [http://localhost:3000/](http://localhost:3000/) and check it out.
-
 </br>
 
 ## Problem solving
@@ -86,7 +83,7 @@ Now navigate to [http://localhost:3000/](http://localhost:3000/) and check it ou
 ## Project code summary
 
 - **Date updated:** `10-12-2021`
-- **First commit:** `xx-xx-2021`
+- **First commit:** `09-15-2021`
 - **Directory:** `\instagram_copy\src`
 - **Totals:** 
   - ` 50 files`
