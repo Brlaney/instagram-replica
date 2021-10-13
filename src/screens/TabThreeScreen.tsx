@@ -23,7 +23,7 @@ export default function TabThreeScreen() {
       <TopPhoneNav />
 
       {/* TopNav component | Box-b */}
-      <TopNav user='therock' verified={true} />
+      <TopNav user='Watch TV' verified={false} />
 
       {/* Box-c | profile image badge - posts - followers - following */}
       <StatsNav

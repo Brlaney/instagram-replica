@@ -16,7 +16,6 @@ import Btm from '../components/sections/Btm';
 import { data } from '../lib/data';
 import styles from '../styles/styles';
 
-
 export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
@@ -25,7 +24,7 @@ export default function TabTwoScreen() {
       <TopPhoneNav />
 
       {/* Box b. | TopNav component */}
-      <TopNav user='therock' verified={true} />
+      <TopNav user='Search' verified={false} />
 
       {/* Box c. | profile image badge - posts - followers - following */}
       <StatsNav
@@ -64,4 +63,3 @@ export default function TabTwoScreen() {
     </View>
   );
 };
-

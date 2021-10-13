@@ -23,7 +23,7 @@ export default function TabFourScreen() {
       <TopPhoneNav />
 
       {/* TopNav component | Box-b */}
-      <TopNav user='therock' verified={true} />
+      <TopNav user='shop' verified={true} />
 
       {/* Box-c | profile image badge - posts - followers - following */}
       <StatsNav
