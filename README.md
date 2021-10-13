@@ -40,6 +40,10 @@ Summary text goes here.
 
 ## Demo
 
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/64326462/136578530-f9e7d8b6-a6c1-43d8-ba48-17d21dfbc595.png" alt="instagram-replica-user-profile"  align="center" />
+  <h4><b>Instagram replica user's profile - figure 1.</b></h4>
+</div>
 
 </br>
 
@@ -58,30 +62,19 @@ Summary text goes here.
 ### 1. Clone repository
 
 ```bash
-git clone https://github.com/Brlaney/mtrx.git
+git clone https://github.com/Brlaney/instagram-replica.git
 ```
 
-### 2. Install dependencies
+### 2. Install dependencies then `yarn start`
 
 ```bash
-cd mtrx
+cd instagram-replica
 
-# then for yarn users:
 yarn install
 
-# or npm users:
-npm i 
-```
+expo install
 
-### 3. Start development server
-
-```bash
-yarn dev
-
-#or
-
-npm run dev
-
+yarn start
 ```
 
 Now navigate to [http://localhost:3000/](http://localhost:3000/) and check it out.
@@ -92,25 +85,46 @@ Now navigate to [http://localhost:3000/](http://localhost:3000/) and check it ou
 
 ## Project code summary
 
-- **Date updated:** `xx-xx-2021`
+- **Date updated:** `10-12-2021`
 - **First commit:** `xx-xx-2021`
 - **Directory:** `\instagram_copy\src`
 - **Totals:** 
-  - ` files`
-  - ` lines of code`
-  - ` comments` 
-  - ` blanks`
-  - **Sum total** ` lines`
+  - ` 50 files`
+  - ` 2,085 lines of code`
+  - ` 21 comments` 
+  - ` 286 blanks`
+  - **Sum total** `2,392 lines`
 
 ### Languages
 | language | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-
+| TypeScript React | 41 | 1,609 | 16 | 226 | 1,851 |
+| TypeScript | 9 | 476 | 5 | 60 | 541 |
 
 ### Directories
 | path | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-
+| . | 50 | 2,085 | 21 | 286 | 2,392 |
+| components | 33 | 1,179 | 4 | 145 | 1,328 |
+| components\sections | 10 | 240 | 0 | 58 | 298 |
+| components\svgs | 23 | 939 | 4 | 87 | 1,030 |
+| components\svgs\a | 1 | 80 | 0 | 3 | 83 |
+| components\svgs\b | 6 | 186 | 2 | 23 | 211 |
+| components\svgs\c | 1 | 55 | 0 | 3 | 58 |
+| components\svgs\d | 4 | 98 | 0 | 18 | 116 |
+| components\svgs\e | 1 | 34 | 0 | 3 | 37 |
+| components\svgs\f | 3 | 231 | 2 | 16 | 249 |
+| components\svgs\g | 1 | 34 | 0 | 3 | 37 |
+| components\svgs\h | 5 | 200 | 0 | 15 | 215 |
+| components\svgs\i | 1 | 21 | 0 | 3 | 24 |
+| lib | 6 | 62 | 5 | 16 | 83 |
+| lib\constants | 2 | 21 | 0 | 5 | 26 |
+| lib\data | 1 | 8 | 0 | 1 | 9 |
+| lib\hooks | 2 | 10 | 5 | 3 | 18 |
+| lib\types | 1 | 23 | 0 | 7 | 30 |
+| navigation | 3 | 189 | 6 | 16 | 211 |
+| screens | 6 | 279 | 6 | 67 | 352 |
+| styles | 2 | 376 | 0 | 42 | 418 |
 
 </br>
 
